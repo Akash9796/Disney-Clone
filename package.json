@@ -2,7 +2,7 @@
   "homepage": "http://akash9796.github.io/Disney-Clone",
   "name": "disney-clone",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.3",
     "@testing-library/jest-dom": "^5.16.4",
