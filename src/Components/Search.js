@@ -61,6 +61,7 @@ const Container = styled.div`
   position: relative;
   color: black;
   overflow-x: hidden;
+  top: 80px;
 
   &:before {
     /* background: url("/Images/home-background.png") center center / cover
