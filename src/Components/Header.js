@@ -54,10 +54,15 @@ const Nav = styled.nav`
   display: flex;
   padding: 0 20px;
   overflow-x: hidden;
+  width: 100%;
+  
 `;
 
 const Logo = styled.img`
-  width: 80px;
+  width: 6%;
+  @media screen and (max-width: 600px) {
+    width: 20%;
+  }
 `;
 
 const Navmenu = styled.div`
@@ -65,6 +70,7 @@ const Navmenu = styled.div`
   flex: 1;
   align-items: center;
   margin-left: 25px;
+  width: 100%;
   a {
     display: flex;
     align-items: center;
@@ -145,3 +151,5 @@ max-width: 70px;
     }
   }
 `;
+
+

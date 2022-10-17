@@ -33,7 +33,6 @@ export default function Display() {
   }, [page, genre, popular, search]);
 
   const movies = useSelector(getAllMovies);
-  // console.log(movies);
 
   return (
     <Container>
@@ -65,9 +64,15 @@ const Container = styled.div`
 const Content = styled.div`
   display: grid;
   grid-gap: 25px;
-  padding: 0 5px;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  padding:  15px 15px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   overflow: hidden;
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin: 0;
+  }
+
 `;
 
 const Wrap = styled.div`

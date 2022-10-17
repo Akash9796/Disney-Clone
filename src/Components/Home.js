@@ -3,10 +3,11 @@ import styled from "styled-components";
 import ImgSlider from "./ImgSlider";
 import Viewers from "./Viewers";
 import Display from "./Display";
+import back from "../Images/home-background.png";
 
 export default function Home() {
   return (
-    <Container>
+    <Container back={back}>
       <ImgSlider />
       <Viewers />
       <Display />
@@ -15,15 +16,17 @@ export default function Home() {
 }
 
 const Container = styled.div`
+/* border: 2px solid red; */
+position: absolute;
   min-height: calc(100vh-70px);
   padding: 0 calc(3.5vw);
   position: relative;
   color: black;
   overflow-x: hidden;
+  top: 77px;
 
   &:before {
-    background: url("/Images/home-background.png") center center / cover
-      no-repeat fixed;
+    background-image: url(${back});
     content: "";
     position: absolute;
     top: 0;

@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useSelector } from "react-redux";
 import { getAllMovies } from "../Features/movieSlice";
+import Image1 from "../Images/slider-badging.jpg";
+import Image2 from "../Images/slider-badag.jpg";
 import { Link } from "react-router-dom";
 
 export default function ImgSlider() {
@@ -35,10 +37,10 @@ export default function ImgSlider() {
           );
         })} */}
       <Wrap>
-        <img src="/Images/slider-badging.jpg" alt="" />
+        <img src={Image1} alt="" />
       </Wrap>
       <Wrap>
-        <img src="/Images/slider-badag.jpg" alt="" />
+        <img src={Image2} alt="" />
       </Wrap>
     </Carousel>
   );

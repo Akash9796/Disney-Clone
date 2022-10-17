@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { genre } from "../Features/genreSlice";
 import { popular } from "../Features/popularSlice";
 import Display from "./Display";
-import Home from "./Home";
+import back from "../Images/home-background.png";
 
 export default function Series() {
   const dispatch = useDispatch();
@@ -26,8 +26,9 @@ const Container = styled.div`
   overflow-x: hidden;
 
   &:before {
-    background: url("/Images/home-background.png") center center / cover
-      no-repeat fixed;
+    /* background: url("/Images/home-background.png") center center / cover
+      no-repeat fixed; */
+    background-image: url(${back});
     content: "";
     position: absolute;
     top: 0;

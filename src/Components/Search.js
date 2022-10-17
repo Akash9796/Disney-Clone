@@ -5,6 +5,7 @@ import { genre } from "../Features/genreSlice";
 import { popular } from "../Features/popularSlice";
 import { search } from "../Features/searchSlice";
 import Display from "./Display";
+import back from "../Images/home-background.png";
 
 export default function Search() {
   const [input, setInput] = useState("");
@@ -62,8 +63,9 @@ const Container = styled.div`
   overflow-x: hidden;
 
   &:before {
-    background: url("/Images/home-background.png") center center / cover
-      no-repeat fixed;
+    /* background: url("/Images/home-background.png") center center / cover
+      no-repeat fixed; */
+    background-image: url(${back});
     content: "";
     position: absolute;
     top: 0;
